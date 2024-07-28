@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynammic Color Change</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class = "container">
-        <div class = "DynammicBox" id="dBox"></div>
-        <div class ="buttons">
-            <button onclick="changeColor()" id="Blue">Blue</button>
-            <button onclick="changeColor()" id="Red">Red</button>
-            <button onclick="changeColor()" id="Green">Green</button>
-            <button onclick="changeColor()" id="Orange">Orange</button>
-            <button onclick="changeColor()" id="Purple">Purple</button>
-            <button onclick="changeColor()" id="Yellow">Yellow</button>
-            <button onclick="changeColor()" id="Aqua">Aqua</button>
-            <button onclick="changeColor()" id="DarkBlue">Dark Blue</button>
-            <button onclick="changeColor()" id="Maroon">Maroon</button>
-            <button onclick="changeColor()" id="DarkGreen">Dark Green</button>
-            <button onclick="changeColor()" id="Indigo">Indigo</button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DynammicColor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="App.js" defer></script>
+  </head>
+  <body>
+    <div id="flexContainer">
+      <div id="DynammicBox"></div>
+      <p>Statically Created Buttons</p>
+      <div id="buttons">
+        <button
+          type="button"
+          class="button"
+          onclick="changeColor('#000dff')"
+          style="background-color: #000dff"
+        >DarkBlue
+        </button>
+        <button
+          type="button"
+          class="button"
+          onclick="changeColor('#ff0000')"
+          style="background-color: #ff0000"
+        >
+          Red
+        </button>
+        <button
+          type="button"
+          class="button"
+          onclick="changeColor('#008000')"
+          style="background-color: #008000"
+        >
+          Green
+        </button>
+        <button
+          type="button"
+          class="button"
+          onclick="changeColor('#ffff00')"
+          style="background-color: #ffff00"
+        >
+          Yellow
+        </button>
+        <button
+          type="button"
+          class="button"
+          onclick="changeColor('#ffa600')"
+          style="background-color: #ffa600"
+        >
+          Orange
+        </button>
+      </div>
+      <p>Dynamically Created Buttons using JavaScript</p>
+      <div id = "dynamicallyCreated"></div>
     </div>
-   <script src = "App.js"></script>
-</body>
+  </body>
 </html>
