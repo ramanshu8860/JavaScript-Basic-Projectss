@@ -25,3 +25,8 @@ p{
   padding: 2px;
   color: white;
 }
+
+#dynamicallyCreated{
+    display: flex;
+    justify-content: center;
+}

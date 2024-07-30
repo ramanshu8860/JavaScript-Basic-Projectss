@@ -3,7 +3,8 @@ function changeColor(color) {
   DynammicBox.style.background = color;
 }
 
-var colors = ["maroon","darkGreen"];
+var colors = ["maroon","darkgreen", "pink", "lightBlue", "Grey", 
+    "Indigo", "BurlyWood", "CadetBlue", "Crimson", "DarkSlateBlue"];
 let outputDiv = document.getElementById("dynamicallyCreated");
 for (var i = 0; i < colors.length; i++) {
   var createButton = document.createElement("button");
@@ -15,9 +16,9 @@ for (var i = 0; i < colors.length; i++) {
 
   (function (color) {
     console.log("color is: ", color);
-    item.onclick = () => {
+    createButton.onclick = () => {
       return changeColor(color);
     };
-  })(colors[i]);
+  })(colors[i]);``
   outputDiv.appendChild(createButton);
 }
